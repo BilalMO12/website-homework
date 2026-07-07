@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفعاليات</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<div id="loader">
+
+        <div class="loader-content">
+
+            🎓 دليل فعاليات الجامعة
+
+            <div class="spinner"></div>
+
+            <p>
+                جاري تحميل الموقع...
+            </p>
+
+        </div>
+
+    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            🎓 دليل الفعاليات
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="events.html">الفعاليات</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">عن الدليل</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">اتصل بنا</a>
+                </li>
+
+            </ul>
+
+        </div>
+ <button id="themeToggle"
+         class="btn btn-light">
+    🌙
+    </div>
+</nav>
+
+<div class="container my-5">
+
+    <h1 class="mb-4">جميع الفعاليات</h1>
+
+    <div class="row mb-4">
+
+        <div class="col-md-6 mb-2">
+            <input type="text" id="searchInput" class="form-control" placeholder="ابحث عن فعالية">
+        </div>
+
+        <div class="col-md-6 mb-2">
+            <select id="categoryFilter" class="form-select">
+                <option value="all">كل التصنيفات</option>
+                <option value="ثقافي">ثقافي</option>
+                <option value="رياضي">رياضي</option>
+                <option value="موسيقي">موسيقي</option>
+                <option value="عائلي">عائلي</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="row g-4" id="eventsContainer">
+
+        <!-- Event 1 -->
+        <div class="col-md-4 event-card" data-category="ثقافي">
+
+            <div class="card h-100">
+                <img src="assets/img/11.jpg"
+                    class="card-img-top" >
+              
+
+                <div class="card-body">
+
+                    <span class="badge bg-primary">ثقافي</span>
+
+                    <h5 class="mt-2">
+                        أمسية أدبية
+                    </h5>
+
+                    <p>
+                        15 يوليو 2026
+                    </p>
+
+                    <p>
+                        مكتبة الجامعة
+                    </p>
+
+                    <a href="event.html" class="btn btn-primary">
+                        التفاصيل
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Event 2 -->
+
+        <div class="col-md-4 event-card" data-category="رياضي">
+
+            <div class="card h-100">
+
+                <img src="assets/img/15.jpg"
+                    class="card-img-top" >
+
+                <div class="card-body">
+
+                    <span class="badge bg-success">رياضي</span>
+
+                    <h5 class="mt-2">
+                        بطولة كرة القدم
+                    </h5>
+
+                    <p>
+                        25 يوليو 2026
+                    </p>
+
+                    <p>
+                        ملعب الجامعة
+                    </p>
+
+                    <a href="event.html" class="btn btn-primary">
+                        التفاصيل
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Event 3 -->
+
+        <div class="col-md-4 event-card" data-category="موسيقي">
+
+            <div class="card h-100">
+
+                <img src="assets/img/16.jpg"
+                    class="card-img-top" >
+
+                <div class="card-body">
+
+                    <span class="badge bg-danger">
+                        موسيقي
+                    </span>
+
+                    <h5 class="mt-2">
+                        حفل موسيقي
+                    </h5>
+
+                    <p>
+                        20 يوليو 2026
+                    </p>
+
+                    <p>
+                        المسرح الرئيسي
+                    </p>
+
+                    <a href="event.html" class="btn btn-primary">
+                        التفاصيل
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Event 4 -->
+
+        <div class="col-md-4 event-card" data-category="عائلي">
+
+            <div class="card h-100">
+
+                <img src="assets/img/17.jpg"
+                    class="card-img-top" >
+
+                <div class="card-body">
+
+                    <span class="badge bg-warning text-dark">
+                        عائلي
+                    </span>
+
+                    <h5 class="mt-2">
+                        يوم الأسرة
+                    </h5>
+
+                    <p>
+                        25 يوليو 2026
+                    </p>
+
+                    <p>
+                        الحديقة العامة
+                    </p>
+
+                    <a href="event.html" class="btn btn-primary">
+                        التفاصيل
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="bg-dark text-white text-center p-4 mt-5">
+
+    <p>© 2026 دليل فعاليات الجامعة</p>
+
+</footer>
+
+<script>
+
+const searchInput = document.getElementById("searchInput");
+const categoryFilter = document.getElementById("categoryFilter");
+const eventCards = document.querySelectorAll(".event-card");
+
+function filterEvents() {
+
+    const searchValue = searchInput.value.toLowerCase();
+    const categoryValue = categoryFilter.value;
+
+    eventCards.forEach(card => {
+
+        const title = card.querySelector("h5").textContent.toLowerCase();
+        const category = card.dataset.category;
+
+        const matchesSearch = title.includes(searchValue);
+
+        const matchesCategory =
+            categoryValue === "all" ||
+            category === categoryValue;
+
+        if (matchesSearch && matchesCategory) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+}
+
+searchInput.addEventListener("keyup", filterEvents);
+categoryFilter.addEventListener("change", filterEvents);
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
